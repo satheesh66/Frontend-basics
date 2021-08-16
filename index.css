@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+main,
+nav,
+.sec {
+  border: solid 2px;
+}
+
+nav,
+.sec {
+  padding: 1rem 2rem;
+}
+
+main {
+  border-color: green;
+  font-size: 16px;
+  height: 20rem;
+  margin: 1rem;
+}
+
+nav {
+  border-color: magenta;
+  color: magenta;
+  width: 15rem;
+}
+
+nav > ul {
+  list-style-position: inside;
+}
+
+.sectionContainer {
+  width: calc(100% - 15rem);
+  position: relative;
+  bottom: 13rem;
+  left: 15rem;
+}
+
+.sectionContainer > .sec:nth-child(2) {
+  color: brown;
+}
+
+.sec {
+  border-color: rgb(255, 255, 0);
+}
