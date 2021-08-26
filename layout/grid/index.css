@@ -1,0 +1,58 @@
+:root {
+  box-sizing: border-box;
+}
+body {
+  height: 95vh;
+  margin: 0;
+  padding: 0;
+}
+.container div {
+  border: solid 1px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: white;
+}
+.container {
+  height: 100%;
+  grid-gap: 2rem;
+  display: grid;
+  padding: 2rem;
+  background-color: whitesmoke;
+  grid-template-columns: 5% auto auto 25%;
+  grid-template-rows: 5% 10% 2fr 1.5fr;
+  grid-template-areas:
+    "leftnav search search rightnav"
+    "leftnav scard scard rightnav"
+    "leftnav graph graph rightnav"
+    "leftnav payment download rightnav";
+}
+
+.left-nav {
+  grid-area: leftnav;
+}
+
+.right-nav {
+  grid-area: rightnav;
+}
+
+.search {
+  grid-area: search;
+}
+.small-cards {
+  grid-area: scard;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  border: none !important;
+  background-color: transparent !important;
+}
+.graph {
+  grid-area: graph;
+}
+.payment {
+  grid-area: payment;
+}
+
+.download {
+  grid-area: download;
+}
